@@ -180,6 +180,7 @@
 	 * @return {Boolean}         If true, use the last item
 	 */
 	var useLastItem = function (item, settings) {
+		if(!item) return false
 		if (isAtBottom() && isInView(item.content, settings, true)) return true;
 		return false;
 	};
